@@ -18,9 +18,9 @@
 
 
 <script language="javascript">
- 
+
  var caught = 0;
- 	
+
 	if (top.frames.length != 0)
  	{
  		caught++;
@@ -108,53 +108,53 @@ function fadeout() {
 
 
 <script language="JavaScript1.1">
-<!-- 
+<!--
 
-	var locationAfterPreload = "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/"
+	var locationAfterPreload = "/paa_verdensveven/"
 	var lengthOfPreloadBar = 150
 	var heightOfPreloadBar = 15
 	var yourImages = new Array
-( "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/ntnui.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/bgpic.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/telemark.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/meny_0000.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/meny_0001.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/images/peker.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/images/spacer.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/images/meny_02.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/images/meny_04.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/images/meny_05.gif",  
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/spmeny_topp.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/spmeny_01.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/spmeny_02.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/spmeny_bunn.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/rightbottom01.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/rightbottom02.gif", 
-  "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/meny/right.gif" ) 
+( "/paa_verdensveven/ntnui.gif",
+  "/paa_verdensveven/bgpic.gif",
+  "/paa_verdensveven/telemark.gif",
+  "/paa_verdensveven/meny/meny_0000.gif",
+  "/paa_verdensveven/meny/meny_0001.gif",
+  "/paa_verdensveven/images/peker.gif",
+  "/paa_verdensveven/images/spacer.gif",
+  "/paa_verdensveven/images/meny_02.gif",
+  "/paa_verdensveven/images/meny_04.gif",
+  "/paa_verdensveven/images/meny_05.gif",
+  "/paa_verdensveven/meny/spmeny_topp.gif",
+  "/paa_verdensveven/meny/spmeny_01.gif",
+  "/paa_verdensveven/meny/spmeny_02.gif",
+  "/paa_verdensveven/meny/spmeny_bunn.gif",
+  "/paa_verdensveven/meny/rightbottom01.gif",
+  "/paa_verdensveven/meny/rightbottom02.gif",
+  "/paa_verdensveven/meny/right.gif" )
 
 if (document.images) {
-	var dots = new Array() 
+	var dots = new Array()
 	dots[0] = new Image(1,1)
-	dots[0].src = "black.gif" 
+	dots[0].src = "black.gif"
 	dots[1] = new Image(1,1)
 	dots[1].src = "blue.gif"
 	var preImages = new Array(),coverage = Math.floor(lengthOfPreloadBar/yourImages.length),currCount = 0
 	var loaded = new Array(),i,covered,timerID
 	var leftOverWidth = lengthOfPreloadBar%coverage
 }
-function loadImages() { 
-	for (i = 0; i < yourImages.length; i++) { 
+function loadImages() {
+	for (i = 0; i < yourImages.length; i++) {
 		preImages[i] = new Image()
 		preImages[i].src = yourImages[i]
 	}
-	for (i = 0; i < preImages.length; i++) { 
+	for (i = 0; i < preImages.length; i++) {
 		loaded[i] = false
 	}
 	checkLoad()
 }
 function checkLoad() {
 	if (currCount == preImages.length) {
-		fadeout()  
+		fadeout()
 		location.replace(locationAfterPreload)
 		return
 	}
@@ -165,27 +165,27 @@ function checkLoad() {
 			currCount++
 		}
 	}
-	timerID = setTimeout("checkLoad()",10) 
+	timerID = setTimeout("checkLoad()",10)
 }
 // end hiding -->
 </script>
 
 
 </head>
-<body style="font-family: Verdana, Arial; font-size: 10pt; text-decoration: none;" bgcolor="#FFFFFF"> 
+<body style="font-family: Verdana, Arial; font-size: 10pt; text-decoration: none;" bgcolor="#FFFFFF">
 
-<table width="100%"  border="0" align="center" valign="top" CELLSPACING=5 CELLPADDING=0 style="font-family: Verdana, Arial; font-size: 10pt" >    
+<table width="100%"  border="0" align="center" valign="top" CELLSPACING=5 CELLPADDING=0 style="font-family: Verdana, Arial; font-size: 10pt" >
 
-<tr valign="center">      
+<tr valign="center">
 <td valign="center">
 <br>
 <br>
 <center
 <font style="font-family: Verdana, Arial; font-size: 8pt; color: #758DB8">
 
-<a href="http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/" target="_top" onClick="fadeout()">
+<a href="/paa_verdensveven/" target="_top" onClick="fadeout()">
 <IMG SRC="paa_verdensveven/ntnui.gif" NAME="meny_bunn" BORDER=0><br>
-<IMG SRC="paa_verdensveven/bgpic.gif" NAME="meny_bunn" BORDER=0><br> 
+<IMG SRC="paa_verdensveven/bgpic.gif" NAME="meny_bunn" BORDER=0><br>
 <IMG SRC="paa_verdensveven/telemark.gif" NAME="meny_bunn" BORDER=0>
 </a>
 

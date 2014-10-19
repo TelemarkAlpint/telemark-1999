@@ -24,9 +24,9 @@ and  #
 ##############################################################################
 # Set Variables
 
-$guestbookurl = "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/sladdrespalte.html";
+$guestbookurl = "/paa_verdensveven/sladdrespalte.html";
 $guestbookreal="/local/www.stud/stud/htdocs/studorg/telemark/paa_verdensveven/sladdrespalte.html";
-$cgiurl = "http://www.stud.ntnu.no/studorg/telemark/paa_verdensveven/cgi/sladdre.pl";
+$cgiurl = "/paa_verdensveven/cgi/sladdre.pl";
 
 # Set Your Options:
 $mail = 1;              # 1 = Yes; 0 = No
@@ -220,7 +220,7 @@ sub no_comments {
    print "Content-type: text/html\n\n";
    print "<html><head><title>No Comments</title></head>\n";
    print "<body><h1>Du har ikke skrevet inn noen melding</h1>\n";
-   print "Du må skrive inn en melding i meldingsfeltet under\n";
+   print "Du mÃ¥ skrive inn en melding i meldingsfeltet under\n";
    print "<form method=POST action=\"$cgiurl\">\n";
    print "Your Name:<input type=text name=\"realname\" size=30 ";
    print "value=\"$FORM{'realname'}\"><br>\n";
@@ -244,7 +244,7 @@ sub no_name {
    print "Content-type: text/html\n\n";
    print "<html><head><title>No Name</title></head>\n";
    print "<body><h1>Du har ikke skrevet inn navn!!</h1>\n";
-   print "Du må skrive inn navn! Gjør det i feltet under\n";
+   print "Du mÃ¥ skrive inn navn! GjÃ¸r det i feltet under\n";
    print "<form method=POST action=\"$cgiurl\">\n";
    print "Navn:<input type=text name=\"realname\" size=30><br>\n";
    print "E-Mail: <input type=text name=\"username\"";
